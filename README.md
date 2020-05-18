@@ -6,15 +6,15 @@ Workflow yang akan dijalankan pada tugas ini adalah sebagai berikut
 
 Workflow ini berisi 3 meta node, yaitu
 
-![](/screenshoot/1.1.PNG)
+![](/screenshoot/1.1.png)
 
 ``Load Data Node``
 
-![](/screenshoot/1.2.PNG)
+![](/screenshoot/1.2.png)
 
 ``Extract date-time attributes``
 
-![](/screenshoot/1.3.PNG)
+![](/screenshoot/1.3.png)
 
 ``Aggregation and time series``
 
@@ -106,31 +106,31 @@ Lalu data tersebut dihitung rata-ratanya per segment yang sesuai (tahun, bulan, 
 
 Menghitung usage keseluruhan dan menghitung rata-rata per segment tahun.
 
-![](/screenshoot/15.1.PNG)
+![](/screenshoot/15.1.png)
 
 Menghitung rata-rata per segment bulan.
 
-![](/screenshoot/15.2.PNG)
+![](/screenshoot/15.2.png)
 
 Menghitung rata-rata per segment minggu.
 
-![](/screenshoot/15.3.PNG)
+![](/screenshoot/15.3.png)
 
 Menghitung rata-rata per segment hari di 1 minggu.
 
-![](/screenshoot/15.4.PNG)
+![](/screenshoot/15.4.png)
 
 Menghitung rata-rata per segment harian.
 
-![](/screenshoot/15.5.PNG)
+![](/screenshoot/15.5.png)
 
 Menghitung rata-rata per segment jam di 1 hari.
 
-![](/screenshoot/15.6.PNG)
+![](/screenshoot/15.6.png)
 
 Menghitung rata-rata per segment klasifikasi hari.
 
-![](/screenshoot/15.7.PNG)
+![](/screenshoot/15.7.png)
 
 Menghitung rata-rata per segment jam.
 
@@ -153,7 +153,7 @@ Pada evaluation akan dijalankan workflow
 
 ![](/screenshoot/27.PNG)
 
-![](/screenshoot/27.1.PNG)
+![](/screenshoot/27.1.png)
 
 Dapat dilihat pada node Normalizer, semua data kecuali ID, dinormalisasi menjadi range 0 - 1. Pada node setelah Denormalizer data dioutputkan menjadi 2 bentuk yaitu visualisasi dan data table yang diteruskan ke general workflow. Selanjutnya, data output tadi dimasukkan kembali ke Local Big Data Environment menggunakan 2 node, yaitu Spark to Hive untuk load menjadi Apache Hive dan Spark to Parquet untuk load menjadi HDFS.
 
