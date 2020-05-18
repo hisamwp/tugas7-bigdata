@@ -6,17 +6,17 @@ Workflow yang akan dijalankan pada tugas ini adalah sebagai berikut
 
 Workflow ini berisi 3 meta node, yaitu
 
-![](/screenshoot/1.1.png)
-
 ``Load Data Node``
 
-![](/screenshoot/1.2.png)
+![](/screenshoot/1.1.png)
 
 ``Extract date-time attributes``
 
-![](/screenshoot/1.3.png)
+![](/screenshoot/1.2.png)
 
 ``Aggregation and time series``
+
+![](/screenshoot/1.3.png)
 
 ### 1 Business Understanding
 Data yang digunakan pada workflow ini adalah data Irish Energy Meter, dimana data tersebut berisi data penggunaan listrik di Irlandia dalam jangka waktu tertentu. Dengan data tersebut dapat dilakukan peng-cluster-an, dengan tujuan memberikan informasi yang berguna seperti informasi konsumsi energi, atau hal lainnya.
@@ -94,7 +94,7 @@ Query ini akan menghasilkan segmentasi jam, yang akan dimasukkan nilainya di kol
 
 Semua node telah dijalankan, dan hasil column nantinya akan dilakukan analisa pada meta node ``Aggregation and time series``, meta node ini berisi sejumlah node seperti berikut
 
-![](/screenshoot/1.3.PNG)
+![](/screenshoot/1.3.png)
 
 Pada meta node ini, kita menerima input dan menyimpannya didalam memory sementara menggunakan node Persist Spark Dataframe/RDD.
 
